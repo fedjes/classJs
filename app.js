@@ -78,9 +78,9 @@ const hunter = {
     cry() {
         console.log('AAaaaAAaaaA');
     },
-    drawerHuntr(div) {
+    drawerHuntr(linkDrawGameArea) {
         // let takeLink = drawer.drawGameArea();
-        console.log(div);
+        console.log(linkDrawGameArea);
         let divHunter = document.createElement('div');
         divHunter.style.height = '30px';
         divHunter.style.width = '30px';
@@ -115,7 +115,8 @@ const drawer = {
     // linkDrawGameArea: this.drawGameArea, 
 }
 drawer.drawGameArea();
-hunter.drawerHuntr();
+// console.log(drawer);
+ hunter.drawerHuntr(linkDrawGameArea);
 // drawer.drawGameArea();
 // hunter.drawerHuntr()
 // console.log(drawer.linkDrawGameArea)
