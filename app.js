@@ -80,18 +80,18 @@ const hunter = {
     },
     drawerHuntr(linkDrawGameArea) {
         // let takeLink = drawer.drawGameArea();
-        console.log(linkDrawGameArea);
+        console.log('linkDrawGameArea ', linkDrawGameArea);
+
         let divHunter = document.createElement('div');
         divHunter.style.height = '30px';
         divHunter.style.width = '30px';
         divHunter.style.border = '1px solid red';
         divHunter.id = 'hunter';
         console.log(divHunter);
-        
         // takeLink.append(hunter.drawerHuntr());
         // return divHunter;
         // drawer.drawGameArea();
-        
+        linkDrawGameArea.prepend(divHunter);
     },
 }
 hunter.getDamage(150);
@@ -107,16 +107,15 @@ const drawer = {
         div.style.height = '1000px';
         div.style.width = '1000px';
         div.style.border = '2px solid black';
-        div.id = 'test';
+        div.id = 'gameArea';
         this.linkDrawGameArea = div;
-        console.log('linkDrawGameArea', div);
         return div;
     },
     // linkDrawGameArea: this.drawGameArea, 
 }
 drawer.drawGameArea();
 // console.log(drawer);
- hunter.drawerHuntr(linkDrawGameArea);
+ hunter.drawerHuntr(drawer.linkDrawGameArea);
 // drawer.drawGameArea();
 // hunter.drawerHuntr()
 // console.log(drawer.linkDrawGameArea)
