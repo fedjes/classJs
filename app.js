@@ -115,7 +115,7 @@ const drawer = {
 }
 drawer.drawGameArea();
 // console.log(drawer);
- hunter.drawerHuntr(drawer.linkDrawGameArea);
+ hunter.drawerHuntr(drawer.linkDrawGameArea); 
 // drawer.drawGameArea();
 // hunter.drawerHuntr()
 // console.log(drawer.linkDrawGameArea)
