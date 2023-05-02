@@ -1,3 +1,5 @@
+import {drawer} from './drawer.js';
+
 const hunter = {
     hp: 150,
     prime: 'sparks',
@@ -98,24 +100,9 @@ hunter.getDamage(150);
 // console.log( hunter.getPosition().x)
 
 
-
-const drawer = {
-    linkDrawGameArea: null,
-    drawGameArea() {
-        let div = document.createElement('div');
-        document.querySelector('body').prepend(div);
-        div.style.height = '1000px';
-        div.style.width = '1000px';
-        div.style.border = '2px solid black';
-        div.id = 'gameArea';
-        this.linkDrawGameArea = div;
-        return div;
-    },
-    // linkDrawGameArea: this.drawGameArea, 
-}
-drawer.drawGameArea();
 // console.log(drawer);
- hunter.drawerHuntr(drawer.linkDrawGameArea); 
+drawer.drawGameArea();
+hunter.drawerHuntr(drawer.linkDrawGameArea); 
 // drawer.drawGameArea();
 // hunter.drawerHuntr()
 // console.log(drawer.linkDrawGameArea)
